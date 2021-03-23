@@ -14,7 +14,7 @@ array.forEach(item => {
 
     // looping through the items in the array property to count how many times exact same item appaers in the array
 for (let prop in count){
-    if (count[prop] >=2){
+    if (count[prop] >=1){
         result.push(prop)       
     }
     console.log(" Delivery truck visited  : " + prop + " store " + count[prop] + " time(s).")

@@ -1,7 +1,9 @@
 function number_times_visited(array){
+    //define constants
 const count = {}
 const result = []
 
+    // looping through the array item to determine item count
 array.forEach(item => {
     if (count[item]) {
        count[item] +=1
@@ -10,6 +12,7 @@ array.forEach(item => {
     count[item] = 1
 })
 
+    // looping through the items in the array property to count how many times exact same item appaers in the array
 for (let prop in count){
     if (count[prop] >=2){
         result.push(prop)       
